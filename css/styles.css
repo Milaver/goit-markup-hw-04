@@ -47,7 +47,7 @@ body {
 .contacts-link:hover,
 .contacts-link:focus,
 .site-nav .link:hover,
-.site-nav .link:focus, 
+.site-nav .link:focus,
 .footer .link-map:hover,
 .footer .link-map:focus,
 .address-menu .footer-link:hover,
@@ -126,9 +126,27 @@ body {
 
 .contacts-nav,
 .contacts-link {
+  display: inline-flex;
   color: var(--primary-text-color);
   text-decoration: none;
   list-style: none;
+}
+.contacts-link::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: contain;
+}
+.contacts-logo-list::before {
+  background-image: url(../images/background-images/envelope.svg);
+}
+.contacts-logo-phone::before {
+  background-image: url(../images/background-images/smartphone.svg);
+  width: 10px;
+  height: 16px;
 }
 .contacts-nav-menu {
   display: flex;
@@ -161,14 +179,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 600px;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-      ),
-    url("../images/./background-images/team.jpg");
+    ),
+    url('../images/./background-images/team.jpg');
   background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
   /* outline: 1px solid black */
 }
 .hero-title {
@@ -222,6 +241,29 @@ body {
 }
 .features-item {
   width: 270px;
+}
+.features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: auto;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button-bg-color);
+  border-radius: 4px;
+}
+.features-item-antena::before {
+  background-image: url(../images/background-images/antenna.svg);
+}
+.features-item-clock::before {
+  background-image: url(../images/background-images/clock.svg);
+}
+.features-item-diagram::before {
+  background-image: url(../images/background-images/diagram.svg);
+}
+.features-item-astronavt::before {
+  background-image: url(../images/background-images/astronaut.svg);
 }
 .features-menu .features-item:not(:last-child) {
   margin-right: 30px;

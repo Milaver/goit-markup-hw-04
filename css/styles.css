@@ -369,7 +369,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .social-link {
   display: flex;
   justify-content: center;
@@ -591,7 +590,8 @@ body {
 }
 .social-text-title {
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.14px;
   text-transform: uppercase;
   color: var(--logo-bg-white-color);

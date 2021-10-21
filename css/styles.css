@@ -382,20 +382,19 @@ body {
 .social-link:not(:last-child) {
   margin-right: 10px;
 }
-
 .team .social-icon {
   fill: var(--border-client);
 }
-.team .social-link:hover,
-.team .social-link:focus {
+.social-item:hover,
+.social-item:focus {
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--logo-bg-white-color);
+  border-radius: 50%;
 }
-.team .social-icon:hover,
-.team .social-icon:focus {
+.social-item:hover .social-icon,
+.social-item:focus .social-icon {
   fill: var(--logo-bg-white-color);
 }
-
 .team-heading {
   margin-bottom: 10px;
   font-weight: 500;

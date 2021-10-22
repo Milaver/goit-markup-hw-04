@@ -371,15 +371,14 @@ body {
 .team .social-icon {
   fill: var(--border-client);
 }
-.social-item:hover,
-.social-item:focus {
-  background-color: var(--accent-color);
-  color: var(--logo-bg-white-color);
-  border-radius: 50%;
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--logo-bg-white-color);
 }
-.social-item:hover .social-icon,
-.social-item:focus .social-icon {
-  fill: var(--logo-bg-white-color);
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--logo-bg-white-color);
 }
 .team-heading {
   margin-bottom: 10px;
@@ -430,16 +429,15 @@ body {
   margin-right: 30px;
 }
 .client-icon {
-  width: 106px;
-  height: 60px;
   fill: var(--border-client);
 }
 .client-link:hover,
 .client-link:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.client-item:hover .client-icon,
-.client-item:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 /*Портфолио*/

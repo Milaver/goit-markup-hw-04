@@ -101,6 +101,7 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .logo-header {
   padding-top: 24px;

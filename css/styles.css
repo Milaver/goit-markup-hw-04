@@ -413,8 +413,8 @@ body {
 }
 .client-item {
   display: block;
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   flex-basis: calc(100% / 6 - 30px);
 }
 .client-link {

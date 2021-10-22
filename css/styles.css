@@ -104,11 +104,10 @@ body {
 }
 .logo-header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 25px; margin-right: 93px;
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -134,30 +133,15 @@ body {
   list-style: none;
 }
 .header-icon {
-  fill: var(--primary-text-color);
+
   margin-right: 10px;
-}
+  fill: var(--primary-text-color);
+  vertical-align: middle;}
+/* align-items: center;} */
 .contacts-link:hover .header-icon,
 .contacts-link:focus .header-icon {
   fill: var(--accent-color);
 }
-/* .contacts-link::before {
-  content: '';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  background-size: contain;
-}
-.contacts-logo-list::before {
-  background-image: url(../images/background-images/envelope.svg);
-}
-.contacts-logo-phone::before {
-  background-image: url(../images/background-images/smartphone.svg);
-  width: 10px;
-  height: 16px; */
-
 .contacts-nav-menu {
   display: flex;
   margin-left: auto;
@@ -317,6 +301,7 @@ body {
 }
 .work-image {
   display: block;
+  width: 100%;
   height: auto;
 }
 .text-submite {
@@ -351,6 +336,8 @@ body {
 }
 .card-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 /* Блок соцсетей */
 .social-menu {
@@ -426,6 +413,8 @@ body {
 }
 .client-item {
   display: block;
+  width: 100%;
+  height: auto;
   flex-basis: calc(100% / 6 - 30px);
 }
 .client-link {
@@ -443,7 +432,6 @@ body {
 .client-icon {
   width: 106px;
   height: 60px;
-  /* fill: rebeccapurple */
   fill: var(--border-client);
 }
 .client-link:hover,
@@ -514,7 +502,7 @@ body {
   background-color: var(--button-bg-color);
 }
 
-/* Наши роботы */
+/* Примеры работ */
 
 .work-list {
   display: flex;
@@ -526,7 +514,11 @@ body {
 .work-list-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; list-style: none;
+}
+.work-list-link {
+  text-decoration: none;
+  
 }
 .work-list-item:hover,
 .work-list-item:focus {
@@ -536,8 +528,11 @@ body {
 }
 .work-portfolio-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .title-portfolio {
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

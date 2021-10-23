@@ -105,7 +105,8 @@ body {
 }
 .logo-header {
   padding-top: 24px;
-  padding-bottom: 25px; margin-right: 93px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .site-nav {
   display: flex;
@@ -135,10 +136,10 @@ body {
   list-style: none;
 }
 .header-icon {
-
   margin-right: 10px;
   fill: var(--primary-text-color);
-  vertical-align: middle;}
+  vertical-align: middle;
+}
 /* align-items: center;} */
 .contacts-link:hover .header-icon,
 .contacts-link:focus .header-icon {
@@ -375,12 +376,12 @@ body {
 }
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--accent-color);
-    fill: var(--logo-bg-white-color);
+  background-color: var(--accent-color);
+  fill: var(--logo-bg-white-color);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-    fill: var(--logo-bg-white-color);
+  fill: var(--logo-bg-white-color);
 }
 .team-heading {
   margin-bottom: 10px;
@@ -514,22 +515,22 @@ body {
 .work-list-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-bottom: 30px; list-style: none;
+  margin-bottom: 30px;
+  list-style: none;
 }
 .work-list-link {
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
-.work-list-item:hover
- {
+.work-list-item:hover,
+.work-list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  cursor: pointer;
 }
 .work-portfolio-image {
   display: block;
   width: 100%;
-  height: auto;
+
 }
 .title-portfolio {
   color: var(--title-text-color);
@@ -587,7 +588,7 @@ body {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--logo-bg-white-color);
 }

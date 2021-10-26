@@ -149,7 +149,6 @@ body {
 }
 .contacts-nav-menu {
   display: flex;
-  margin-left: auto;
 }
 .contacts-nav-menu .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -288,13 +287,11 @@ body {
 .team-title,
 .clients-title {
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-
 .work-menu {
   display: flex;
   text-align: center;
@@ -306,7 +303,7 @@ body {
 }
 .work-image {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .text-submite {
@@ -358,20 +355,27 @@ body {
   padding: 0px;
 }
 .social-item {
-  display: flex;
-  justify-content: center;
+  width: 44px;
+  height: 44px;
 }
-.social-link {
+.social-item:not(:last-child) {
+  margin-right: 10px;}
+/* .social-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+
   border-radius: 50%;
   /* background-color: var(--logo-bg-white-color); */
-}
-.social-link:not(:last-child) {
-  margin-right: 10px;
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .team .social-icon {
   fill: var(--border-client);
@@ -459,11 +463,7 @@ body {
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.text-portfolio {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--primary-text-color);
-}
+
 /* Кнопки */
 .button {
   font-family: 'Roboto';
@@ -540,6 +540,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .description-card-wrapper {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;

@@ -92,9 +92,16 @@ body {
   color: var(--logo-bg-white-color);
 }
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  background-color: var(--logo-bg-white-color);
   border-bottom: 1px solid;
   border-color: var(--border-header);
-}
+  /* margin-bottom: 50px; */
+} 
 .navigation {
   display: flex;
   align-items: center;
@@ -360,7 +367,8 @@ body {
   height: 44px;
 }
 .social-item:not(:last-child) {
-  margin-right: 10px;}
+  margin-right: 10px;
+}
 .social-link {
   width: 100%;
   height: 100%;
@@ -464,7 +472,7 @@ body {
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
-  /* display: inline-block; */
+  display: inline-block;
   border: none;
   color: var(--logo-bg-white-color);
   background-color: var(--accent-color);
